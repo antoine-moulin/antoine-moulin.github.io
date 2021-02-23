@@ -1,49 +1,79 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Internship Proposals | Nathan Grinsztajn</title><link>https://nathan-grinsztajn.netlify.app/internships/</link><atom:link href="https://nathan-grinsztajn.netlify.app/internships/index.xml" rel="self" type="application/rss+xml"/><description>Internship Proposals</description><generator>Wowchemy (https://wowchemy.com)</generator><language>en-us</language><lastBuildDate>Fri, 20 Nov 2020 00:00:00 +0100</lastBuildDate><image><url>https://nathan-grinsztajn.netlify.app/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url><title>Internship Proposals</title><link>https://nathan-grinsztajn.netlify.app/internships/</link></image><item><title>RL and Tabu Search for Graph Coloring Problems</title><link>https://nathan-grinsztajn.netlify.app/internships/tabucol/</link><pubDate>Fri, 20 Nov 2020 00:00:00 +0100</pubDate><guid>https://nathan-grinsztajn.netlify.app/internships/tabucol/</guid><description>&lt;p>&lt;strong>Supervisors&lt;/strong>: &lt;a href="https://philippe-preux.github.io/" target="_blank" rel="noopener">Philippe Preux&lt;/a>, &lt;a href="https://nathangrinsztajn.github.io/" target="_blank" rel="noopener">Nathan Grinsztajn&lt;/a>&lt;/p>
-&lt;p>&lt;strong>Duration&lt;/strong>: 5 to 6 months&lt;/p>
-&lt;p>&lt;strong>When&lt;/strong>: Spring-Summer 2021&lt;/p>
-&lt;p>&lt;strong>Where&lt;/strong>: &lt;a href="https://team.inria.fr/scool/" target="_blank" rel="noopener">Scool&lt;/a> (previously &lt;a href="http://sequel.lille.inria.fr/" target="_blank" rel="noopener">SequeL&lt;/a>), Inria Lille, Villeneuve d&amp;rsquo;Ascq, France&lt;/p>
-&lt;p>&lt;strong>Expected background&lt;/strong>: master in CS, specialized in machine learning.&lt;/p>
-&lt;p>&lt;strong>Keywords&lt;/strong>: reinforcement learning, combinatorial optimization, experimental.&lt;/p>
-&lt;p>&lt;strong>Context&lt;/strong>:
-Reinforcement learning is a sub-field of machine learning in which we aim at designing agents that learn to act. Acting usually involves performing a sequence of actions in order to achieve a goal. Examples are countless; games are good examples, like Pacman or chess in which the player has to perform a series of actions either to reach a maximal score, or to defeat his opponent. Applications of RL go way beyond games.&lt;/p>
-&lt;p>Recently, there were trials to use RL to solve hard combinatorial problems. Some major examples (and successes) are GO, Rubiks Cube, Scheduling, Maximum Independent Set (MIS), Maximum Coverage (MC), Minimum Vertex Cover (MVC)&amp;hellip; Graph coloring, however useful in practice (bandwidth allocation, scheduling&amp;hellip;) and difficult, received less attention. State of the art graph coloring solvers still mainly rely on tabu search (tabucol), and hand-crafted heuristics. It is to be expected that hybriding RL and tabu search will provide more efficient algorithms.&lt;/p>
-&lt;p>&lt;strong>What&lt;/strong>:
-The goal of this internship is to:&lt;/p>
-&lt;ul>
-&lt;li>Study the literature of this problem. This includes deep reinforcement learning, graph neural networks, graph coloring, tabu search.&lt;/li>
-&lt;li>Perform an experimental assessment of the ideas.&lt;/li>
-&lt;li>Explore new ideas on combining RL and tabu search (or other search algorithms). This exploration can be theoretical or algorithmic.&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Bibliography&lt;/strong>:&lt;/p>
-&lt;ul>
-&lt;li>Sutton, Barto, &lt;a href="http://incompleteideas.net/book/the-book.html" target="_blank" rel="noopener">Reinforcement Learning, an Introduction&lt;/a>, 2nd edition, 2018.&lt;/li>
-&lt;li>Battaglia et al. &lt;a href="http://arxiv.org/abs/1806.01261" target="_blank" rel="noopener">Relational Inductive Biases, Deep Learning, and Graph Networks&lt;/a> ArXiv:1806.01261, October 17, 2018.&lt;/li>
-&lt;li>A. Hertz, D. de Werra, &lt;a href="https://link.springer.com/article/10.1007/BF02239976" target="_blank" rel="noopener">Using tabu search techniques for graph coloring&lt;/a>. &lt;em>Computing&lt;/em> &lt;strong>39,&lt;/strong> 345–351 (1987).&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Working environment&lt;/strong>: &lt;a href="https://team.inria.fr/scool/" target="_blank" rel="noopener">Scool&lt;/a> (previously &lt;a href="http://sequel.lille.inria.fr/" target="_blank" rel="noopener">SequeL&lt;/a>) is a well-known research group in reinforcement learning and bandits. It is composed of 5 permanent researchers, 20+ PhD students, a couple of post-docs and engineers. Scool provides a very rich and stimulating for doing cutting-edge research in RL.&lt;/p></description></item><item><title>RL for Dynamic Task Graph Scheduling</title><link>https://nathan-grinsztajn.netlify.app/internships/hpc/</link><pubDate>Fri, 20 Nov 2020 00:00:00 +0100</pubDate><guid>https://nathan-grinsztajn.netlify.app/internships/hpc/</guid><description>&lt;p>&lt;strong>Supervisors&lt;/strong>: &lt;a href="https://philippe-preux.github.io/" target="_blank" rel="noopener">Philippe Preux&lt;/a>, &lt;a href="https://nathangrinsztajn.github.io/" target="_blank" rel="noopener">Nathan Grinsztajn&lt;/a>&lt;/p>
-&lt;p>&lt;strong>Duration&lt;/strong>: 5 to 6 months&lt;/p>
-&lt;p>&lt;strong>When&lt;/strong>: Spring-Summer 2021&lt;/p>
-&lt;p>&lt;strong>Where&lt;/strong>: &lt;a href="https://team.inria.fr/scool/" target="_blank" rel="noopener">Scool&lt;/a> (previously &lt;a href="http://sequel.lille.inria.fr/" target="_blank" rel="noopener">SequeL&lt;/a>), Inria Lille, Villeneuve d&amp;rsquo;Ascq, France&lt;/p>
-&lt;p>&lt;strong>Expected background&lt;/strong>: master in CS, specialized in machine learning.&lt;/p>
-&lt;p>&lt;strong>Keywords&lt;/strong>: reinforcement learning, combinatorial optimization, experimental.&lt;/p>
-&lt;p>&lt;strong>Context&lt;/strong>:
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+  <channel>
+    <title>Internship Proposals | Nathan Grinsztajn</title>
+    <link>https://nathan-grinsztajn.netlify.app/internships/</link>
+    <atom:link href="https://nathan-grinsztajn.netlify.app/internships/index.xml" rel="self" type="application/rss+xml" />
+    <description>Internship Proposals</description>
+    <generator>Wowchemy (https://wowchemy.com)</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 20 Nov 2020 00:00:00 +0100</lastBuildDate>
+    <image>
+      <url>https://nathan-grinsztajn.netlify.app/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png</url>
+      <title>Internship Proposals</title>
+      <link>https://nathan-grinsztajn.netlify.app/internships/</link>
+    </image>
+    <item>
+      <title>RL and Tabu Search for Graph Coloring Problems</title>
+      <link>https://nathan-grinsztajn.netlify.app/internships/tabucol/</link>
+      <pubDate>Fri, 20 Nov 2020 00:00:00 +0100</pubDate>
+      <guid>https://nathan-grinsztajn.netlify.app/internships/tabucol/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Supervisors&lt;/strong&gt;: &lt;a href="https://philippe-preux.github.io/" target="_blank" rel="noopener"&gt;Philippe Preux&lt;/a&gt;, &lt;a href="https://nathangrinsztajn.github.io/" target="_blank" rel="noopener"&gt;Nathan Grinsztajn&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Duration&lt;/strong&gt;: 5 to 6 months&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;When&lt;/strong&gt;: Spring-Summer 2021&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where&lt;/strong&gt;: &lt;a href="https://team.inria.fr/scool/" target="_blank" rel="noopener"&gt;Scool&lt;/a&gt; (previously &lt;a href="http://sequel.lille.inria.fr/" target="_blank" rel="noopener"&gt;SequeL&lt;/a&gt;), Inria Lille, Villeneuve d&amp;rsquo;Ascq, France&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Expected background&lt;/strong&gt;: master in CS, specialized in machine learning.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Keywords&lt;/strong&gt;: reinforcement learning, combinatorial optimization, experimental.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Context&lt;/strong&gt;:
+Reinforcement learning is a sub-field of machine learning in which we aim at designing agents that learn to act. Acting usually involves performing a sequence of actions in order to achieve a goal. Examples are countless; games are good examples, like Pacman or chess in which the player has to perform a series of actions either to reach a maximal score, or to defeat his opponent. Applications of RL go way beyond games.&lt;/p&gt;
+&lt;p&gt;Recently, there were trials to use RL to solve hard combinatorial problems. Some major examples (and successes) are GO, Rubiks Cube, Scheduling, Maximum Independent Set (MIS), Maximum Coverage (MC), Minimum Vertex Cover (MVC)&amp;hellip; Graph coloring, however useful in practice (bandwidth allocation, scheduling&amp;hellip;) and difficult, received less attention. State of the art graph coloring solvers still mainly rely on tabu search (tabucol), and hand-crafted heuristics. It is to be expected that hybriding RL and tabu search will provide more efficient algorithms.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What&lt;/strong&gt;:
+The goal of this internship is to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Study the literature of this problem. This includes deep reinforcement learning, graph neural networks, graph coloring, tabu search.&lt;/li&gt;
+&lt;li&gt;Perform an experimental assessment of the ideas.&lt;/li&gt;
+&lt;li&gt;Explore new ideas on combining RL and tabu search (or other search algorithms). This exploration can be theoretical or algorithmic.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Bibliography&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sutton, Barto, &lt;a href="http://incompleteideas.net/book/the-book.html" target="_blank" rel="noopener"&gt;Reinforcement Learning, an Introduction&lt;/a&gt;, 2nd edition, 2018.&lt;/li&gt;
+&lt;li&gt;Battaglia et al. &lt;a href="http://arxiv.org/abs/1806.01261" target="_blank" rel="noopener"&gt;Relational Inductive Biases, Deep Learning, and Graph Networks&lt;/a&gt; ArXiv:1806.01261, October 17, 2018.&lt;/li&gt;
+&lt;li&gt;A. Hertz, D. de Werra, &lt;a href="https://link.springer.com/article/10.1007/BF02239976" target="_blank" rel="noopener"&gt;Using tabu search techniques for graph coloring&lt;/a&gt;. &lt;em&gt;Computing&lt;/em&gt; &lt;strong&gt;39,&lt;/strong&gt; 345–351 (1987).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Working environment&lt;/strong&gt;: &lt;a href="https://team.inria.fr/scool/" target="_blank" rel="noopener"&gt;Scool&lt;/a&gt; (previously &lt;a href="http://sequel.lille.inria.fr/" target="_blank" rel="noopener"&gt;SequeL&lt;/a&gt;) is a well-known research group in reinforcement learning and bandits. It is composed of 5 permanent researchers, 20+ PhD students, a couple of post-docs and engineers. Scool provides a very rich and stimulating for doing cutting-edge research in RL.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>RL for Dynamic Task Graph Scheduling</title>
+      <link>https://nathan-grinsztajn.netlify.app/internships/hpc/</link>
+      <pubDate>Fri, 20 Nov 2020 00:00:00 +0100</pubDate>
+      <guid>https://nathan-grinsztajn.netlify.app/internships/hpc/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Supervisors&lt;/strong&gt;: &lt;a href="https://philippe-preux.github.io/" target="_blank" rel="noopener"&gt;Philippe Preux&lt;/a&gt;, &lt;a href="https://nathangrinsztajn.github.io/" target="_blank" rel="noopener"&gt;Nathan Grinsztajn&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Duration&lt;/strong&gt;: 5 to 6 months&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;When&lt;/strong&gt;: Spring-Summer 2021&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Where&lt;/strong&gt;: &lt;a href="https://team.inria.fr/scool/" target="_blank" rel="noopener"&gt;Scool&lt;/a&gt; (previously &lt;a href="http://sequel.lille.inria.fr/" target="_blank" rel="noopener"&gt;SequeL&lt;/a&gt;), Inria Lille, Villeneuve d&amp;rsquo;Ascq, France&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Expected background&lt;/strong&gt;: master in CS, specialized in machine learning.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Keywords&lt;/strong&gt;: reinforcement learning, combinatorial optimization, experimental.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Context&lt;/strong&gt;:
 Combinatorial Optimization Problems (COP) constitute an important family of fundamental problems: traveling salesman, vehicle routing problem, stable marriage , graph coloring, task scheduling, and many others.
-There are various algorithmic approaches, ranging from (provably) exact methods (&lt;em>e.g.&lt;/em> based on tree search, linear programming&amp;hellip;) to non (provably) exact/approximate methods (heuristics and meta-heuristics). Those methods are able to solve large scale COPs, but they require a careful investigation of the problem.&lt;/p>
-&lt;p>On the other hand, real world applications bring another set of challenges: inherent uncertainty in the definition of the problem and randomness in the process dynamics.
+There are various algorithmic approaches, ranging from (provably) exact methods (&lt;em&gt;e.g.&lt;/em&gt; based on tree search, linear programming&amp;hellip;) to non (provably) exact/approximate methods (heuristics and meta-heuristics). Those methods are able to solve large scale COPs, but they require a careful investigation of the problem.&lt;/p&gt;
+&lt;p&gt;On the other hand, real world applications bring another set of challenges: inherent uncertainty in the definition of the problem and randomness in the process dynamics.
 Task Graph Scheduling consists in mapping a task graph onto a target platform: nodes denote computational tasks, and edges model precedence constraints between tasks.
-When the full graph is unknown at the beginning of the scheduling (e.g. because of user interactions), known heuristics fall short. We propose to study and implement a RL approach to solve this kind of task.&lt;/p>
-&lt;p>&lt;strong>What&lt;/strong>:
-The goal of this internship is to:&lt;/p>
-&lt;ul>
-&lt;li>Study the literature of this problem. This includes deep reinforcement learning, graph neural networks, task graph scheduling.&lt;/li>
-&lt;li>Perform an experimental assessment of these ideas.&lt;/li>
-&lt;li>Explore new ideas on combining RL and dynamic graphs (&lt;em>e.g.&lt;/em> the Canadian Traveller Problem (CTP)). This exploration can be theoretical or algorithmic.&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Bibliography&lt;/strong>:&lt;/p>
-&lt;ul>
-&lt;li>Sutton, Barto, &lt;a href="http://incompleteideas.net/book/the-book.html" target="_blank" rel="noopener">Reinforcement Learning, an Introduction&lt;/a>, 2nd edition, 2018&lt;/li>
-&lt;li>Aditya Paliwal et al, &lt;a href="https://arxiv.org/abs/1905.02494" target="_blank" rel="noopener">Reinforced genetic algorithm learning for optimizing computation graphs&lt;/a>. InProc. ICLR, page 24,2020&lt;/li>
-&lt;li>Battaglia et al. &lt;a href="http://arxiv.org/abs/1806.01261" target="_blank" rel="noopener">Relational Inductive Biases, Deep Learning, and Graph Networks&lt;/a> ArXiv:1806.01261, October 17, 2018.&lt;/li>
-&lt;li>Grinsztajn et al, &lt;a href="https://arxiv.org/abs/2011.04333" target="_blank" rel="noopener">Geometric Deep Reinforcement Learning for Dynamic DAG Scheduling&lt;/a>. Advances in IEEE ADPRL (ADPRL 2020).&lt;/li>
-&lt;/ul>
-&lt;p>&lt;strong>Working environment&lt;/strong>: &lt;a href="https://team.inria.fr/scool/" target="_blank" rel="noopener">Scool&lt;/a> (previously &lt;a href="http://sequel.lille.inria.fr/" target="_blank" rel="noopener">SequeL&lt;/a>) is a well-known research group in reinforcement learning and bandits. It is composed of 5 permanent researchers, 20+ PhD students, a couple of post-docs and engineers. Scool provides a very rich and stimulating for doing cutting-edge research in RL.&lt;/p></description></item></channel></rss>
+When the full graph is unknown at the beginning of the scheduling (e.g. because of user interactions), known heuristics fall short. We propose to study and implement a RL approach to solve this kind of task.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;What&lt;/strong&gt;:
+The goal of this internship is to:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Study the literature of this problem. This includes deep reinforcement learning, graph neural networks, task graph scheduling.&lt;/li&gt;
+&lt;li&gt;Perform an experimental assessment of these ideas.&lt;/li&gt;
+&lt;li&gt;Explore new ideas on combining RL and dynamic graphs (&lt;em&gt;e.g.&lt;/em&gt; the Canadian Traveller Problem (CTP)). This exploration can be theoretical or algorithmic.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Bibliography&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sutton, Barto, &lt;a href="http://incompleteideas.net/book/the-book.html" target="_blank" rel="noopener"&gt;Reinforcement Learning, an Introduction&lt;/a&gt;, 2nd edition, 2018&lt;/li&gt;
+&lt;li&gt;Aditya Paliwal et al, &lt;a href="https://arxiv.org/abs/1905.02494" target="_blank" rel="noopener"&gt;Reinforced genetic algorithm learning for optimizing computation graphs&lt;/a&gt;. InProc. ICLR, page 24,2020&lt;/li&gt;
+&lt;li&gt;Battaglia et al. &lt;a href="http://arxiv.org/abs/1806.01261" target="_blank" rel="noopener"&gt;Relational Inductive Biases, Deep Learning, and Graph Networks&lt;/a&gt; ArXiv:1806.01261, October 17, 2018.&lt;/li&gt;
+&lt;li&gt;Grinsztajn et al, &lt;a href="https://arxiv.org/abs/2011.04333" target="_blank" rel="noopener"&gt;Geometric Deep Reinforcement Learning for Dynamic DAG Scheduling&lt;/a&gt;. Advances in IEEE ADPRL (ADPRL 2020).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Working environment&lt;/strong&gt;: &lt;a href="https://team.inria.fr/scool/" target="_blank" rel="noopener"&gt;Scool&lt;/a&gt; (previously &lt;a href="http://sequel.lille.inria.fr/" target="_blank" rel="noopener"&gt;SequeL&lt;/a&gt;) is a well-known research group in reinforcement learning and bandits. It is composed of 5 permanent researchers, 20+ PhD students, a couple of post-docs and engineers. Scool provides a very rich and stimulating for doing cutting-edge research in RL.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
