@@ -1,513 +1,158 @@
-<!doctype html>
-<html lang=en-us>
-<head>
-  <meta charset=utf-8>
-  <meta name=viewport content="width=device-width,initial-scale=1">
-  <meta http-equiv=x-ua-compatible content="IE=edge">
-  <meta name=generator content="Wowchemy 4.8.0 for Hugo">
-  <meta name=author content="Antoine Moulin">
-  <meta name=description content="Antoine Moulin's personal webpage">
-  <link rel=alternate hreflang=en-us href=https://nathan-grinsztajn.netlify.app/>
-  <link rel=preconnect href=https://fonts.gstatic.com crossorigin>
-  <meta name=theme-color content="#2962ff">
-  <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css integrity="sha256-FMvZuGapsJLjouA6k7Eo2lusoAX9i0ShlWFG6qt7SLc=" crossorigin=anonymous>
-  <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css integrity="sha256-Vzbj7sDDS/woiFS3uNKo8eIuni59rjyNGtXfstRzStA=" crossorigin=anonymous>
-  <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/github.min.css crossorigin=anonymous title=hl-light>
-  <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/styles/dracula.min.css crossorigin=anonymous title=hl-dark disabled>
-  <link rel=stylesheet href=https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.css integrity="sha512-1xoFisiGdy9nvho8EgXuXvnpR5GAMSjFwp40gSRE3NwdUdIMIKuPa7bqoUhLD0O/5tPNhteAsE5XyyMi5reQVA==" crossorigin=anonymous>
-  <script src=https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.2.2/lazysizes.min.js integrity="sha512-TmDwFLhg3UA4ZG0Eb4MIyT1O1Mb+Oww5kFG0uHqXsdbyZz9DcvYQhKpGgNkamAI6h2lGGZq2X8ftOJvF/XjTUg==" crossorigin=anonymous async></script>
-  <link rel=stylesheet href="https://fonts.googleapis.com/css?family=Montserrat:400,700%7CRoboto:400,400italic,700%7CRoboto+Mono&display=swap">
-  <link rel=stylesheet href=/css/wowchemy.css>
-  <script src=https://identity.netlify.com/v1/netlify-identity-widget.js></script>
-  <link rel=alternate href=/index.xml type=application/rss+xml title="Antoine Moulin">
-  <link rel=manifest href=/index.webmanifest>
-  <link rel=icon type=image/png href=/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_32x32_fill_lanczos_center_2.png>
-  <link rel=apple-touch-icon type=image/png href=/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_192x192_fill_lanczos_center_2.png>
-  <link rel=canonical href=https://nathan-grinsztajn.netlify.app/>
-  <meta property="twitter:card" content="summary">
-  <meta property="og:site_name" content="Antoine Moulin">
-  <meta property="og:url" content="https://nathan-grinsztajn.netlify.app/">
-  <meta property="og:title" content="Antoine Moulin">
-  <meta property="og:description" content="Antoine Moulin's personal webpage">
-  <meta property="og:image" content="https://nathan-grinsztajn.netlify.app/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
-  <meta property="twitter:image" content="https://nathan-grinsztajn.netlify.app/images/icon_hu0b7a4cb9992c9ac0e91bd28ffd38dd00_9727_512x512_fill_lanczos_center_2.png">
-  <meta property="og:locale" content="en-us">
-  <meta property="og:updated_time" content="2020-11-20T00:00:00+01:00">
-  <script type=application/ld+json>{"@context":"https://schema.org","@type":"WebSite","potentialAction":{"@type":"SearchAction","target":"https://nathan-grinsztajn.netlify.app?q={search_term_string}","query-input":"required name=search_term_string"},"url":"https://nathan-grinsztajn.netlify.app"}</script>
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
   <title>Antoine Moulin</title>
+  
+  <meta name="author" content="Antoine Moulin">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥕</text></svg>">
+  <!-- <link rel="icon" type="image/png" href="images/seal_icon.png"> -->
 </head>
 
-<body id=top data-spy=scroll data-offset=70 data-target=#navbar-main>
-  <script>window.wcDarkLightEnabled=true;</script>
-  <script>const isSiteThemeDark=false;</script>
-  <script src=/js/load-theme.js></script>
-  <aside class=search-results id=search>
-    <div class=container>
-      <section class=search-header>
-        <div class="row no-gutters justify-content-between mb-3">
-          <div class=col-6>
-            <h1>Search</h1>
-          </div>
-          <div class="col-6 col-search-close">
-            <a class=js-search href=#><i class="fas fa-times-circle text-muted" aria-hidden=true></i></a>
-          </div>
-        </div>
-        <div id=search-box>
-          <input name=q id=search-query placeholder=Search... autocapitalize=off autocomplete=off autocorrect=off spellcheck=false type=search class=form-control>
-        </div>
-      </section>
-      <section class=section-search-results>
-        <div id=search-hits>
-          
-        </div>
-      </section>
-    </div>
-  </aside>
-  <nav class="navbar navbar-expand-lg navbar-light compensate-for-scrollbar" id=navbar-main>
-    <div class=container>
-      <div class="d-none d-lg-inline-flex">
-        <a class=navbar-brand href=/>Antoine Moulin</a>
-      </div>
-      <button type=button class=navbar-toggler data-toggle=collapse data-target=#navbar-content aria-controls=navbar aria-expanded=false aria-label="Toggle navigation">
-        <span><i class="fas fa-bars"></i>
-        </span>
-      </button>
-      <div class="navbar-brand-mobile-wrapper d-inline-flex d-lg-none">
-        <a class=navbar-brand href=/>Antoine Moulin</a>
-      </div>
-      <div class="navbar-collapse main-menu-item collapse justify-content-start" id=navbar-content>
-        <ul class="navbar-nav d-md-inline-flex">
-          <li class=nav-item>
-            <a class=nav-link href=/#about data-target=#about><span>Home</span></a>
-          </li>
-          <li class=nav-item>
-            <a class=nav-link href=/#experience data-target=#experience><span>Resume</span></a>
-          </li>
-          <li class=nav-item>
-            <a class=nav-link href=/#contact data-target=#contact><span>Contact</span></a>
-          </li>
-          <li class=nav-item>
-            <a class=nav-link href=/projects/><span>Projects</span></a>
-          </li>
-        </ul>
-      </div>
-      <ul class="nav-icons navbar-nav flex-row ml-auto d-flex pl-md-2">
-        <li class=nav-item>
-          <a class="nav-link js-search" href=# aria-label=Search><i class="fas fa-search" aria-hidden=true></i></a>
-        </li>
-        <li class="nav-item dropdown theme-dropdown">
-          <a href=# class=nav-link data-toggle=dropdown aria-haspopup=true><i class="fas fa-moon" aria-hidden=true></i></a>
-          <div class=dropdown-menu><a href=# class="dropdown-item js-set-theme-light"><span>Light</span></a>
-            <a href=# class="dropdown-item js-set-theme-dark"><span>Dark</span></a>
-            <a href=# class="dropdown-item js-set-theme-auto"><span>Automatic</span></a>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <span class="js-widget-page d-none">
-    
-  </span>
-  <section id=about class="home-section wg-about">
-    <div class=container>
-      <div class=row>
-        <div class="col-12 col-lg-4">
-          <div id=profile>
-            <img class="avatar avatar-circle" src=/author/antoine-moulin/antoine-moulin_avatar-circle.jpg alt="Antoine Moulin">
-            <div class=portrait-title>
-              <h2>Antoine Moulin</h2>
-              <h3>Graduate student</h3>
-              <h3><span>Telecom Paris & ENS Paris-Saclay</span></h3>
-            </div>
-            <ul class=network-icon aria-hidden=true>
-              <li>
-                <a href=mailto:antoine.m-b@hotmail.com><i class="fas fa-envelope big-icon"></i></a>
-              </li>
-              <li>
-                <a href=https://twitter.com/antoine_mln target=_blank rel=noopener><i class="fab fa-twitter big-icon"></i></a>
-              </li>
-              <li>
-                <a href=https://github.com/antoine-moulin target=_blank rel=noopener><i class="fab fa-github big-icon"></i></a>
-              </li>
-              <li>
-                <a href=https://www.linkedin.com/in/antoinemoulin/ target=_blank rel=noopener><i class="fab fa-linkedin-in big-icon"></i></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-12 col-lg-8">
-          <h1>About</h1>
-          <p>/!\ Website in construction /!\.</p>
-          <div class=row>
-            <div class=col-md-5>
-              <h3>Interests</h3>
-              <ul class=ul-interests>
-                <li>Meta Learning</li>
-                <li>Reinforcement Learning</li>
-                <li>Representation Learning</li>
-                <li>Optimization</li>
-              </ul>
-            </div>
-            <div class=col-md-7>
-              <h3>Education</h3>
-              <ul class="ul-edu fa-ul">
-                <li>
-                  <i class="fa-li fas fa-graduation-cap"></i>
-                  <div class=description>
-                    <p class=course>Master of Science "Mathematics, Vision and Learning" (MVA), 2020</p>
-                    <p class=institution>École Normale Supérieure Paris-Saclay</p>
-                  </div>
-                </li>
-                <li>
-                  <i class="fa-li fas fa-graduation-cap"></i>
-                  <div class=description>
-                    <p class=course>Graduate degree in Applied Mathematics and Computer Science, 2017 - 2020</p>
-                    <p class=institution>Telecom Paris</p>
-                  </div>
-                </li>
-                <li>
-                  <i class="fa-li fas fa-graduation-cap"></i>
-                  <div class=description>
-                    <p class=course>Preparatory classes in Mathematics and Physics, 2015 - 2017</p>
-                    <p class=institution>Lycée Janson-de-Sailly</p>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--
-  <section id=publications class="home-section wg-pages">
-    <div class=container>
-      <div class=row>
-        <div class="col-12 col-lg-4 section-heading">
-          <h1>Publications</h1>
-        </div>
-        <div class="col-12 col-lg-8">
-          <div class="alert alert-note">
-            <div>
-              Quickly discover relevant content by <a href=./publication/>filtering publications</a>.
-            </div>
-          </div>
-          <div class="media stream-item">
-            <div class=media-body>
-              <h3 class="article-title mb-0 mt-0"><a href=/publication/hpcadprl/>Geometric Deep Reinforcement Learning for Dynamic DAG Scheduling</a></h3><a href=/publication/hpcadprl/ class=summary-link>
-                <div class=article-style>
-                  In practice, it is quite common to face combinatorial optimization problems which contain uncertainty along with non-determinism and …
-                </div></a>
-                <div class="stream-meta article-metadata">
-                  <div>
-                    <span><a href=/author/nathan-grinsztajn/>Nathan Grinsztajn</a></span>, <span><a href=/author/olivier-beaumont/>Olivier Beaumont</a></span>, <span><a href=/author/emmanuel-jeannot/>Emmanuel Jeannot</a></span>, <span><a href=/author/philippe-preux/>Philippe Preux</a></span>
-                  </div>
-                </div>
-                <div class=btn-links>
-                  <a class="btn btn-outline-primary my-1 mr-1 btn-sm" href=https://arxiv.org/abs/2011.04333 target=_blank rel=noopener>PDF</a>
-                </div>
-              </div>
-              <div class=ml-3>
-                <a href=/publication/hpcadprl/><img src=/publication/hpcadprl/featured_hu5c46ecd8227b8fb031099e295437753c_53070_150x0_resize_lanczos_2.png alt="Geometric Deep Reinforcement Learning for Dynamic DAG Scheduling"></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    //-->
-    <section id=experience class="home-section wg-experience">
-      <div class=container>
-        <div class=row>
-          <div class="col-12 col-lg-4 section-heading">
-            <h1>Experience</h1>
-          </div>
-          <div class="col-12 col-lg-8">
-            <div class="row experience">
-              <div class="col-auto text-center flex-column d-none d-sm-flex">
-                <div class="row h-50">
-                  <div class=col>&nbsp;
-                  </div>
-                  <div class=col>&nbsp;
-                  </div>
-                </div>
-                <div class=m-2>
-                  <span class="badge badge-pill border exp-fill">&nbsp;
-                  </span>
-                </div>
-                <div class="row h-50">
-                  <div class="col border-right">&nbsp;
-                  </div>
-                  <div class=col>&nbsp;
-                  </div>
-                </div>
-              </div>
-              <div class="col py-2">
-                <div class=card>
-                  <div class=card-body>
-                    <h4 class="card-title exp-title text-muted mt-0 mb-1">Research Intern</h4>
-                    <h4 class="card-title exp-company text-muted my-0">Inria</h4>
-                    <div class="text-muted exp-meta">
-                      May 2020 – October 2020
-                      <span class=middot-divider></span>
-                      <span>Lille, France</span>
-                    </div>
-                    <div class=card-text>
-                      Reinforcement learning. Under the supervision of Philippe Preux.
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="row experience">
-              <div class="col-auto text-center flex-column d-none d-sm-flex">
-                <div class="row h-50">
-                  <div class="col border-right">&nbsp;
-                  </div>
-                  <div class=col>&nbsp;
-                  </div>
-                </div>
-                <div class=m-2>
-                  <span class="badge badge-pill border">&nbsp;
-                  </span>
-                </div>
-                <div class="row h-50">
-                  <div class="col border-right">&nbsp;
-                  </div>
-                  <div class=col>&nbsp;
-                  </div>
-                </div>
-              </div>
-            <div class="col py-2">
-              <div class=card>
-                <div class=card-body>
-                  <h4 class="card-title exp-title text-muted mt-0 mb-1">Research Intern</h4>
-                  <h4 class="card-title exp-company text-muted my-0">Aalto University</h4>
-                  <div class="text-muted exp-meta">
-                    July 2019 – September 2019
-                    <span class=middot-divider></span>
-                    <span>Helsinki, Finland</span>
-                  </div>
-                  <div class=card-text>
-                    Kernel methods. Under the supervision of Juho Rousu.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row experience">
-            <div class="col-auto text-center flex-column d-none d-sm-flex">
-              <div class="row h-50">
-                <div class="col border-right">&nbsp;
-                </div>
-                <div class=col>&nbsp;
-                </div>
-              </div>
-              <div class=m-2>
-                <span class="badge badge-pill border">&nbsp;
-                </span>
-              </div>
-              <div class="row h-50">
-                <div class=col>&nbsp;
-                </div>
-                <div class=col>&nbsp;
-                </div>
-              </div>
-            </div>
-            <div class="col py-2">
-              <div class=card>
-                <div class=card-body>
-                  <h4 class="card-title exp-title text-muted mt-0 mb-1">Investment Banking Intern</h4>
-                  <h4 class="card-title exp-company text-muted my-0">Crédit Agricole</h4>
-                  <div class="text-muted exp-meta">
-                    July 2018 – August 2018
-                    <span class=middot-divider></span>
-                    <span>Caen, France</span>
-                  </div>
-                  <div class=card-text>
-                    File analysis in order to write notes about structured funding.
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <section id=contact class="home-section wg-contact">
-    <div class=container>
-      <div class="row contact-widget">
-        <div class="col-12 col-lg-4 section-heading">
-          <h1>Contact</h1>
-        </div>
-        <div class="col-12 col-lg-8">
-          <ul class="fa-ul">
-            <li>
-              <i class="fa-li fas fa-envelope fa-2x" aria-hidden="true"></i>
-              <span id="person-email"><a href="mailto:antoine.m-b@hotmail.com">antoine.m-b@hotmail.com</a></span>
-            </li>
+<script type="text/javascript">
+function toggle_vis(id) {
+    var e = document.getElementById(id);
+    if (e.style.display == 'none')
+    e.style.display = 'inline';
+    else
+    e.style.display = 'none';
+}
+</script>
 
-          </ul>
-            <!--
-            <li>
-              <i class="fa-li fas fa-map-marker fa-2x" aria-hidden="true"></i>
-              <span id="person-address">Inria Lille-Nord Europe<br>40 Avenue Halley<br>59650 Villeneuve-d'Ascq</span>
-            </li>
-            <li>
-              <i class="fa-li fas fa-compass fa-2x" aria-hidden="true"></i>
-              <span>Bâtiment A</span>
-            </li>
-          </ul>
-          <div class="d-none">
-            <input id="map-provider" value="2">
-            <input id="map-lat" value="50.60604">
-            <input id="map-lng" value="3.14816">
-            <input id="map-dir" value="Inria Lille-Nord Europe40 Avenue Halley59650 Villeneuve-d'Ascq">
-            <input id="map-zoom" value="15">
-            <input id="map-api-key" value="">
-          </div>
-          <div id="map" class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0" style="position: relative;">
-            <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(-40px, 0px, 0px);">
-              <div class="leaflet-pane leaflet-tile-pane">
-                <div class="leaflet-layer " style="z-index: 1; opacity: 1;">
-                  <div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 19; transform: translate3d(0px, 0px, 0px) scale(1);">
-                    <img alt="" role="presentation" src="https://a.tile.openstreetmap.org/15/16670/11026.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(244px, -12px, 0px); opacity: 1;">
-                    <img alt="" role="presentation" src="https://b.tile.openstreetmap.org/15/16671/11026.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(500px, -12px, 0px); opacity: 1;">
-                    <img alt="" role="presentation" src="https://b.tile.openstreetmap.org/15/16670/11027.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(244px, 244px, 0px); opacity: 1;">
-                    <img alt="" role="presentation" src="https://c.tile.openstreetmap.org/15/16671/11027.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(500px, 244px, 0px); opacity: 1;">
-                    <img alt="" role="presentation" src="https://c.tile.openstreetmap.org/15/16669/11026.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-12px, -12px, 0px); opacity: 1;">
-                    <img alt="" role="presentation" src="https://c.tile.openstreetmap.org/15/16672/11026.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(756px, -12px, 0px); opacity: 1;">
-                    <img alt="" role="presentation" src="https://a.tile.openstreetmap.org/15/16669/11027.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-12px, 244px, 0px); opacity: 1;">
-                    <img alt="" role="presentation" src="https://a.tile.openstreetmap.org/15/16672/11027.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(756px, 244px, 0px); opacity: 1;">
-                  </div>
-                </div>
-              </div>
-              <div class="leaflet-pane leaflet-shadow-pane">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" alt="" style="margin-left: -12px; margin-top: -41px; width: 41px; height: 41px; transform: translate3d(385px, 175px, 0px);">
-              </div>
-              <div class="leaflet-pane leaflet-overlay-pane">
-                
-              </div>
-              <div class="leaflet-pane leaflet-marker-pane">
-                <img src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/images/marker-icon-2x.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" alt="" tabindex="0" style="margin-left: -12px; margin-top: -41px; width: 25px; height: 41px; transform: translate3d(385px, 175px, 0px); z-index: 175;">
-              </div>
-              <div class="leaflet-pane leaflet-tooltip-pane">
-                
-              </div>
-              <div class="leaflet-pane leaflet-popup-pane">
-                
-              </div>
-              <div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(4.26766e+06px, 2.82284e+06px, 0px) scale(16384);">
-                
-              </div>
-            </div>
-            <div class="leaflet-control-container">
-              <div class="leaflet-top leaflet-left">
-                <div class="leaflet-control-zoom leaflet-bar leaflet-control">
-                  <a class="leaflet-control-zoom-in" href="#" title="Zoom in" role="button" aria-label="Zoom in">+</a>
-                  <a class="leaflet-control-zoom-out" href="#" title="Zoom out" role="button" aria-label="Zoom out">−</a>
-                </div>
-              </div>
-              <div class="leaflet-top leaflet-right">
-                
-              </div>
-              <div class="leaflet-bottom leaflet-left">
-                
-              </div>
-              <div class="leaflet-bottom leaflet-right">
-                <div class="leaflet-control-attribution leaflet-control">
-                  <a href="https://leafletjs.com" title="A JS library for interactive maps">Leaflet</a> | © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>
-                </div>
-              </div>
-            </div>
-          </div>
-          //-->
-        </div>
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Antoine Moulin</name>
+              </p>
+              <p> Hi! I am a second-year PhD student in reinforcement learning and as part of the <a href="https://ellis.eu/">ELLIS</a> PhD program, I am co-supervised by <a href="http://cs.bme.hu/~gergo/">Gergely Neu</a> and <a href="https://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a>. My main objective during this PhD is to gain a deeper understanding of the challenges posed by large-scale reinforcement learning by identifying and exploiting structural properties of Markov decision processes (MDPs) that make large-scale learning statistically and computationally feasible. At the moment, I am particularly interested in efficiently solving the exploration-exploitation tradeoff in infinite-horizon MDPs under (linear) function approximation. My research interests also include: online learning, offline reinforcement learning, representation learning.
+              </p>
 
-        <!--
-        <div class="col-12 col-lg-8">
-          <div class=mb-3>
-            <form name=contact method=post action=https://formspree.io/xoqplyln>
-              <div class="form-group form-inline">
-                <label class=sr-only for=inputName>Name</label>
-                <input type=text name=name class="form-control w-100" id=inputName placeholder=Name required>
-              </div>
-              <div class="form-group form-inline">
-                <label class=sr-only for=inputEmail>Email</label>
-                <input type=email name=email class="form-control w-100" id=inputEmail placeholder=Email required>
-              </div>
-              <div class=form-group>
-                <label class=sr-only for=inputMessage>Message</label>
-                <textarea name=message class=form-control id=inputMessage rows=5 placeholder=Message required>
-                  
-                </textarea>
-              </div>
-              <button type=submit class="btn btn-outline-primary px-3 py-2">
-                Send
-              </button>
-            </form>
-          </div>
-          <ul class=fa-ul>
-          </ul>
-        </div>
-        //-->
-      </div>
+              <p>
+                You can reach out to me at: firstname [dot] lastname [at] upf [dot] edu.
+              </p>
+              
+              <p style="text-align:center">
+<!--                <a href="mailto:">Email</a> &nbsp/&nbsp-->
+                <a href="data/MOULIN_Antoine_CV_20230615.pdf">CV</a> &nbsp/&nbsp
+<!--                <a href="data/JonBarron-bio.txt">Bio</a> &nbsp/&nbsp-->
+<!--                <a href="https://scholar.google.com/">Google Scholar</a> &nbsp/&nbsp-->
+                <a href="https://twitter.com/antoine_mln">Twitter</a> &nbsp/&nbsp
+                <a href="https://github.com/antoine-moulin/">Github</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/antoine_moulin_2019_circle.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/antoine_moulin_2019_circle.png" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tbody><tr><td>
+                <heading>News</heading>
+                <ul>
+                    <li>04/2023 - Our paper "Optimistic Planning by Regularized Dynamic Programming" has been accepted at ICML 2023. See you in Hawaii!</li>
+                    <li>04/2023 - I am attending AISTATS 2023 in Valencia, Spain.</li>
+                    <li>10/2022 - We are organizing <a href="https://rlsummerschool.com/">RLSS 2023</a>, that will take place in June 2023.</li>
+                    <li>09/2022 - I will stay in London for a week to visit the Gatsby unit at UCL.</li>
+                    <li>09/2022 - I will be in Milan, Italy to attend EWRL 2022.</li>
+                    <li>07/2022 - I am staying in Amsterdam, Netherlands for a week to attend a reinforcement learning summer school (RLSS 2022)!</li>
+                    <li>03/2022 - I am in Paris to attend ALT 2022.</li>
+                    <li>12/2021 - I am now officially a PhD student at University Pompeu Fabra.</li>
+
+                    <a href="javascript:toggle_vis('news')">show more</a>
+                    <div id="news" style="display:none">
+
+                    <li>10/2021 - With Luca Viano, we are now organizing a reading group about RL with other people from the ELLIS network.</li>
+                    <li>10/2021 - This month, I was in Tübingen, Germany for the ELLIS Doctoral Symposium (EDS) 2021 to meet with the ELLIS cohort, discuss research, and give an introduction to JAX. Amazing event!</li>
+                    </div>
+                </ul>
+            </td></tr>
+
+
+<td width="100%" valign="middle">
+    <heading>Publications</heading> <br><br>
+    <heading2><i>2023</i></heading2><br><br>
+
+    <div onmouseover="document.getElementById('dvd').style.display = 'block';"
+        onmouseout="document.getElementById('dvd').style.display='none';">
+        <a href="https://arxiv.org/abs/2302.14004"><papertitle>Optimistic Planning by Regularized Dynamic Programming</papertitle></a>
+        <br><i>Antoine Moulin</i>, Gergely Neu</br>
+        <em>International Conference on Machine Learning (ICML)</em>, 2023 <br>
+        <a href="https://arxiv.org/pdf/2302.14004.pdf">pdf</a>
     </div>
-  </section>
-  <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin=anonymous></script>
-  <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin=anonymous></script>
-  <script src=https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js integrity="sha256-CBrpuqrMhXwcLLUd5tvQ4euBHCdh7wGlDfNz8vbu/iI=" crossorigin=anonymous></script>
-  <script src=https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js integrity="sha256-yt2kYMy0w8AbtF89WXb2P1rfjcP/HTHLT7097U8Y5b8=" crossorigin=anonymous></script>
-  <script src=https://cdnjs.cloudflare.com/ajax/libs/instant.page/5.1.0/instantpage.min.js integrity="sha512-1+qUtKoh9XZW7j+6LhRMAyOrgSQKenQ4mluTR+cvxXjP1Z54RxZuzstR/H9kgPXQsVB8IW7DMDFUJpzLjvhGSQ==" crossorigin=anonymous></script>
-  <script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/highlight.min.js integrity="sha512-TDKKr+IvoqZnPzc3l35hdjpHD0m+b2EC2SrLEgKDRWpxf2rFCxemkgvJ5kfU48ip+Y+m2XVKyOCD85ybtlZDmw==" crossorigin=anonymous></script>
-  <script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.2.0/languages/r.min.js></script>
-  <script src=https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.7.1/leaflet.min.js integrity="sha512-SeiQaaDh73yrb56sTW/RgVdi/mMqNeM2oBwubFHagc5BkixSpP1fvqF47mKzPGWYSSy4RwbBunrJBQ4Co8fRWA==" crossorigin=anonymous></script>
-  <script>const code_highlighting=true;</script>
-  <script>const search_config={"indexURI":"/index.json","minLength":1,"threshold":0.3};const i18n={"no_results":"No results found","placeholder":"Search...","results":"results found"};const content_type={'post':"Posts",'project':"Projects",'publication':"Publications",'talk':"Talks",'slides':"Slides"};</script>
-  <script id=search-hit-fuse-template type=text/x-template>
-    <div class="search-hit" id="summary-{{key}}">
-      <div class="search-hit-content">
-        <div class="search-hit-name">
-          <a href="{{relpermalink}}">{{title}}</a>
-          <div class="article-metadata search-hit-type">
-            {{type}}
-          </div>
-          <p class="search-hit-description">{{snippet}}</p>
-        </div>
-      </div>
-    </div>
-  </script>
-  <script src=https://cdnjs.cloudflare.com/ajax/libs/fuse.js/3.2.1/fuse.min.js integrity="sha256-VzgmKYmhsGNNN4Ph1kMW+BjoYJM2jV5i4IlFoeZA9XI=" crossorigin=anonymous></script>
-  <script src=https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/jquery.mark.min.js integrity="sha256-4HLtjeVgH0eIB3aZ9mLYF6E8oU5chNdjU6p6rrXpl9U=" crossorigin=anonymous></script>
-  <script>if(window.netlifyIdentity){window.netlifyIdentity.on("init",user=>{if(!user){window.netlifyIdentity.on("login",()=>{document.location.href="/admin/";});}});}</script>
-  <script src=/js/wowchemy.min.4c2bca31150ce93c5a5e43b8a50f22fd.js></script>
-  <div class=container>
+    <div id="dvd" style="display:none">
+    </div><br>
     
-  </div>
-  <div id=modal class="modal fade" role=dialog>
-    <div class=modal-dialog>
-      <div class=modal-content>
-        <div class=modal-header>
-          <h5 class=modal-title>Cite</h5>
-          <button type=button class=close data-dismiss=modal aria-label=Close>
-            <span aria-hidden=true>&#215;</span>
-          </button>
-        </div>
-        <div class=modal-body>
-          <pre>
-            <code class="tex hljs"></code>
-          </pre>
-        </div>
-        <div class=modal-footer>
-          <a class="btn btn-outline-primary my-1 js-copy-cite" href=# target=_blank><i class="fas fa-copy"></i>Copy</a>
-          <a class="btn btn-outline-primary my-1 js-download-cite" href=# target=_blank><i class="fas fa-download"></i>Download</a>
-          <div id=modal-error>
-            
-          </div>
-        </div>
-      </div>
+<!--     <a href="javascript:toggle_vis('publications')">show more</a>
+    <div id="publications" style="display:none"></div> -->
+    
+    <br>
+
+</td>
+
+
+<td width="100%" valign="middle">
+    <heading>Talks</heading> <br><br>
+
+    <div onmouseover="document.getElementById('dvd').style.display = 'block';"
+        onmouseout="document.getElementById('dvd').style.display='none';">
+        <b><papertitle>Infinite horizon MDPs under function approximation</papertitle></b>
+        <br>03/2023 - <i>Universitat Pompeu Fabra</i>. Barcelona, Spain.</br>
     </div>
-  </div>
+
+    <div onmouseover="document.getElementById('dvd').style.display = 'block';"
+        onmouseout="document.getElementById('dvd').style.display='none';">
+        <b><papertitle>Primal-Dual Methods for RL</papertitle></b>
+        <br>09/2022 - <i>Gatsby Unit, UCL</i>. London, UK.</br>
+    </div>
+
+    <div onmouseover="document.getElementById('dvd').style.display = 'block';"
+        onmouseout="document.getElementById('dvd').style.display='none';">
+        <b><papertitle>Introduction to JAX</papertitle></b>
+        <br>09/2021 - <i>ELLIS Doctoral Symposium 2021</i>. Tübingen, Germany.</br>
+    </div>
+
+    <div onmouseover="document.getElementById('dvd').style.display = 'block';"
+        onmouseout="document.getElementById('dvd').style.display='none';">
+        <b><papertitle>Virtual Sculpture</papertitle></b>
+        <br>06/2018 - <i>Journée de l'innovation</i> (finalist). Paris, France.</br>
+    </div>
+    <div id="dvd" style="display:none">
+    </div><br>
+    
+<!--     <a href="javascript:toggle_vis('publications')">show more</a>
+    <div id="publications" style="display:none"></div> -->
+    
+    <br>
+
+</td>
+
+
+            </tbody></table>
+    
+
+
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                Thanks <a href="https://github.com/jonbarron/website">Jon Barron</a>
+                for this nice template.
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
 </body>
+
 </html>
