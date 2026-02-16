@@ -1,243 +1,212 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
   <title>Antoine Moulin</title>
-  
   <meta name="author" content="Antoine Moulin">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🥕</text></svg>">
-  <!-- <link rel="icon" type="image/png" href="images/seal_icon.png"> -->
+  <meta name="description" content="Antoine Moulin is a PhD student in reinforcement learning, focusing on statistically and computationally efficient methods for large-scale MDPs.">
+  <link rel="canonical" href="https://antoine-moulin.github.io/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Antoine Moulin">
+  <meta property="og:description" content="PhD student in reinforcement learning: exploration, function approximation, online learning, imitation learning, and learning theory.">
+  <meta property="og:url" content="https://antoine-moulin.github.io/">
+  <meta property="og:site_name" content="Antoine Moulin">
+  <meta property="og:image" content="https://antoine-moulin.github.io/images/hawaii_coconut_square.jpg">
+  <meta property="og:image:alt" content="Portrait of Antoine Moulin">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Antoine Moulin">
+  <meta name="twitter:description" content="PhD student in reinforcement learning: exploration, function approximation, online learning, imitation learning, and learning theory.">
+  <meta name="twitter:image" content="https://antoine-moulin.github.io/images/hawaii_coconut_square.jpg">
+
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%230a1020'/%3E%3Ctext x='50' y='62' font-size='54' text-anchor='middle' fill='%23CEB25A'%3EA%3C/text%3E%3C/svg%3E">
+  <script>
+    function toggleVis(id, triggerId) {
+      var block = document.getElementById(id);
+      var trigger = document.getElementById(triggerId);
+      var isHidden = block.style.display === "none";
+      block.style.display = isHidden ? "block" : "none";
+      trigger.textContent = isHidden ? "show less" : "show more";
+    }
+  </script>
 </head>
-
-<script type="text/javascript">
-function toggle_vis(id) {
-    var e = document.getElementById(id);
-    if (e.style.display == 'none')
-    e.style.display = 'inline';
-    else
-    e.style.display = 'none';
-}
-</script>
-
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Antoine Moulin</name>
-              </p>
-              <p>
-                Hi, I am a PhD student in reinforcement learning (RL). My aim is to gain a deeper understanding of the challenges posed by large-scale RL by identifying and exploiting structural properties of Markov decision processes (MDPs) that make large-scale learning statistically and computationally feasible.
-              </p>
-              <p>
-                More specifically, I am interested in efficiently solving the exploration-exploitation tradeoff in infinite-horizon MDPs under (linear) function approximation. My research interests also include: online learning, offline reinforcement learning, representation learning, and more broadly learning theory.
-              </p>
-              <p>
-                I am co-advised by <a href="http://cs.bme.hu/~gergo/">Gergely Neu</a> and <a href="https://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a>. You can reach out to me at: firstname [dot] lastname [at] upf [dot] edu.
-              </p>
-              
-              <p style="text-align:center">
-<!--                <a href="mailto:">Email</a> &nbsp/&nbsp-->
-                <a href="data/moulin_antoine_cv_20250919.pdf">CV</a> &nbsp/&nbsp
-<!--                <a href="data/JonBarron-bio.txt">Bio</a> &nbsp/&nbsp-->
-               <a href="https://scholar.google.com/citations?hl=en&user=W6d2vtMAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://x.com/antoine_mln">Twitter</a> &nbsp/&nbsp
-                <a href="https://github.com/antoine-moulin/">Github</a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="images/hawaii_coconut_circle.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/hawaii_coconut_circle.png" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-        
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tbody><tr><td>
-                <heading>News</heading>
-                <ul>
-                    <li>10/2024 - The virtual RL theory seminars are back, <a href="https://sites.google.com/view/rltheoryseminars/home">join us</a> for the new season!</li>
-                    <li>07/2024 - We are organizing an ICML workshop on RL, <a href="https://arlet-workshop.github.io">check it out</a> :)</li>
-                    <li>06/2024 - I am moving to London to intern and work on uncertainty quantification. Specifically, I'll focus on computing finite-time predictive confidence intervals for general function classes. </li>
-                    <li>08/2023 - I'm going to the ELLIS symposium later this month. See you in Helsinki!</li>
-                    <li>07/2023 - I'll present our ICML paper at EWRL16, in Brussels. </li>
-                    <li>04/2023 - Our paper "Optimistic Planning by Regularized Dynamic Programming" has been accepted at ICML 2023. See you in Hawaii!</li>
+  <div class="page-shell">
+    <header class="card hero">
+      <div class="hero-copy">
+        <p class="name">Antoine Moulin</p>
+        <p>
+          Hi! I am a PhD student in reinforcement learning (RL). My thesis aims to gain a deeper understanding of the challenges posed by large-scale RL by identifying and exploiting structural properties of Markov decision processes (MDPs) that make learning statistically and computationally feasible.
+        </p>
+        <p>
+           My research interests also include: online learning, imitation learning, and language modeling.
+        </p>
+        <p>
+          I am co-advised by <a href="http://cs.bme.hu/~gergo/">Gergely Neu</a> and <a href="https://www.gatsby.ucl.ac.uk/~gretton/">Arthur Gretton</a>. You can reach out to me at: firstname [dot] lastname [at] upf [dot] edu.
+        </p>
+        <p class="link-row">
+          <a href="data/moulin_antoine_cv_20260210.pdf">CV</a>
+          <span>/</span>
+          <a href="https://scholar.google.com/citations?hl=en&user=W6d2vtMAAAAJ&view_op=list_works&sortby=pubdate">Google Scholar</a>
+          <span>/</span>
+          <a href="https://x.com/antoine_mln">X</a>
+          <span>/</span>
+          <a href="https://github.com/antoine-moulin/">GitHub</a>
+        </p>
+      </div>
+      <a class="hero-photo" href="images/hawaii_coconut_square.jpg">
+        <img alt="profile photo" src="images/hawaii_coconut_square.jpg">
+      </a>
+    </header>
 
-                    <a href="javascript:toggle_vis('news')">show more</a>
-                    <div id="news" style="display:none">
+    <section class="card section-block">
+      <h2>News</h2>
+      <ul class="news-list">
+        <li>12/2025 - We are organizing the second edition of <a href="https://arlet-workshop.github.io">ARLET</a> at NeurIPS 2025!</li>
+        <li>11/2025 - I am visiting the Isaac Newton Institute to attend and present at a <a href="https://www.newton.ac.uk/event/scl/">RL workshop</a>.</li>
+        <li>06/2025 - I am visiting UCL for a few weeks to escape the heat from Barcelona <span>&#9728;</span>.</li>
+        <li>10/2024 - The virtual RL theory seminars are back, <a href="https://sites.google.com/view/rltheoryseminars/home">join us</a> for the new season!</li>
+      </ul>
+      <button class="toggle-news" id="news-toggle" type="button" onclick="toggleVis('news-more','news-toggle')">show more</button>
+      <ul class="news-list" id="news-more" style="display:none">
+        <li>07/2024 - We are organizing an ICML workshop on RL, <a href="https://arlet-workshop.github.io">check it out</a> :)</li>
+        <li>06/2024 - I am moving to London to intern and work on uncertainty quantification. Specifically, I'll focus on computing finite-time predictive confidence intervals for general function classes.</li>
+        <li>09/2023 - I will visit UCL for a few months :)</li>
+        <li>08/2023 - I'm going to the ELLIS symposium later this month. See you in Helsinki!</li>
+        <li>07/2023 - I'll present our ICML paper at EWRL16, in Brussels.</li>
+        <li>04/2023 - Our paper "Optimistic Planning by Regularized Dynamic Programming" has been accepted at ICML 2023. See you in Hawaii!</li>
+        <li>04/2023 - I am attending AISTATS 2023 in Valencia, Spain.</li>
+        <li>10/2022 - We are organizing <a href="https://rlsummerschool.com/">RLSS 2023</a>, that will take place in June 2023.</li>
+        <li>09/2022 - I will stay in London for a week to visit the Gatsby unit at UCL.</li>
+        <li>09/2022 - I will be in Milan, Italy to attend EWRL 2022.</li>
+        <li>07/2022 - I am staying in Amsterdam, Netherlands for a week to attend a reinforcement learning summer school (RLSS 2022)!</li>
+        <li>03/2022 - I am in Paris to attend ALT 2022.</li>
+        <li>12/2021 - I am now officially a PhD student at University Pompeu Fabra.</li>
+        <li>10/2021 - With Luca Viano, we are now organizing a reading group about RL with other people from the ELLIS network.</li>
+        <li>10/2021 - This month, I was in T&uuml;bingen, Germany for the ELLIS Doctoral Symposium (EDS) 2021 to meet with the ELLIS cohort, discuss research, and give an introduction to JAX. Amazing event!</li>
+      </ul>
+    </section>
 
-                    <li>04/2023 - I am attending AISTATS 2023 in Valencia, Spain.</li>
-                    <li>10/2022 - We are organizing <a href="https://rlsummerschool.com/">RLSS 2023</a>, that will take place in June 2023.</li>
-                    <li>09/2022 - I will stay in London for a week to visit the Gatsby unit at UCL.</li>
-                    <li>09/2022 - I will be in Milan, Italy to attend EWRL 2022.</li>
-                    <li>07/2022 - I am staying in Amsterdam, Netherlands for a week to attend a reinforcement learning summer school (RLSS 2022)!</li>
-                    <li>03/2022 - I am in Paris to attend ALT 2022.</li>
-                    <li>12/2021 - I am now officially a PhD student at University Pompeu Fabra.</li>
-                    <li>10/2021 - With Luca Viano, we are now organizing a reading group about RL with other people from the ELLIS network.</li>
-                    <li>10/2021 - This month, I was in Tübingen, Germany for the ELLIS Doctoral Symposium (EDS) 2021 to meet with the ELLIS cohort, discuss research, and give an introduction to JAX. Amazing event!</li>
-                    </div>
-                </ul>
-            </td></tr></tbody>
-        </table>
+    <section class="card section-block">
+      <h2>Publications &amp; Preprints</h2>
+      <p class="pub-note">[<span class="gold-star">&#9733;</span>] indicates my favorite papers.</p>
 
+      <h3 class="year-label">2026</h3>
+      <div class="item">
+        <p class="item-title"><a href="https://www.nature.com/articles/s41586-025-09962-4">A benchmark of expert-level academic questions to assess AI capabilities (Humanity's Last Exam)</a></p>
+        <p>Center for AI Safety, Scale AI, <strong>HLE Contributors Consortium</strong><br><em>Nature</em><br><a href="https://arxiv.org/abs/2501.14249">arxiv</a></p>
+        <p class="paper-tldr">tl;dr: little contribution from me, big headache for language models. probably not the last exam, though.</p>
+      </div>
 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tbody><tr><td>
-                <heading>Publications & Preprints</heading> <br><br>
-                <heading2><i>2025</i></heading2><br><br>
+      <h3 class="year-label">2025</h3>
+      <div class="item">
+        <p class="item-title"><a href="https://arxiv.org/abs/2512.00919">Outcome-Aware Spectral Feature Learning for Instrumental Variable Regression</a></p>
+        <p>Dimitri Meunier, Jakub Wornbard, Vladimir R Kostic, <strong>Antoine Moulin</strong>, Alek Frölich, Karim Lounici, Massimiliano Pontil, Arthur Gretton<br><em>preprint</em><br><a href="https://arxiv.org/abs/2512.00919">arxiv</a></p>
+        <p class="paper-tldr">tl;dr: since standard spectral features are agnostic to the outcome, they fail under misalignment; we remedy this by regularizing them towards the outcome via an augmented operator and a contrastive loss.</p>
+      </div>
+      <div class="item">
+        <p class="item-title"><span class="pub-note"><span class="gold-star">&#9733;</span></span> <a href="https://arxiv.org/abs/2505.19946">Inverse Q-Learning Done Right: Offline Imitation Learning in Q<sup>&pi;</sup>-Realizable MDPs</a></p>
+        <p><strong>Antoine Moulin</strong>, Gergely Neu, Luca Viano<br>(NeurIPS 2025) <em>39th Annual Conference on Neural Information Processing Systems</em><br><a href="https://arxiv.org/abs/2505.19946">arxiv</a></p>
+        <p class="paper-tldr">tl;dr: we propose a primal-dual method able to provably match the return of the expert in linear and general Q<sup>&pi;</sup>-realizable MDPs, providing an alternative to maximum likelihood estimation (also known as behavior cloning, or next-token prediction) which can fail dramatically when expert realizability does not hold.</p>
+      </div>
+      <div class="item">
+        <p class="item-title"><a href="https://arxiv.org/abs/2506.10899">Demystifying Spectral Feature Learning for Instrumental Variable Regression</a></p>
+        <p>Dimitri Meunier, <strong>Antoine Moulin</strong>, Jakub Wornbard, Vladimir R. Kostic, Arthur Gretton<br>(NeurIPS 2025) <em>39th Annual Conference on Neural Information Processing Systems</em><br><a href="https://arxiv.org/abs/2506.10899">arxiv</a></p>
+        <p class="paper-tldr">tl;dr: we focus on understanding why and when spectral methods work for IV regression, and show it depends on the alignment of the target function with the top singular directions of a conditional expectation operator (dubbed "spectral alignment"), and the singular value decay (which captures instrument strength).</p>
+      </div>
+      <div class="item">
+        <p class="item-title"><a href="https://arxiv.org/abs/2506.01722">When Lower-Order Terms Dominate: Improved Loss-Range Adaptivity for Experts Algorithms</a></p>
+        <p><strong>Antoine Moulin</strong>, Emmanuel Esposito, Dirk van der Hoeven<br>(NeurIPS 2025) <em>39th Annual Conference on Neural Information Processing Systems</em><br><a href="https://arxiv.org/abs/2506.01722">arxiv</a></p>
+        <p class="paper-tldr">tl;dr: we develop algorithms for the experts problem with possibly heavy-tailed losses that are adaptive to the second moment, and show they achieve best-of-both worlds guarantees.</p>
+      </div>
+      <div class="item">
+        <p class="item-title"><span class="pub-note"><span class="gold-star">&#9733;</span></span> <a href="https://arxiv.org/abs/2502.13900">Optimistically Optimistic Exploration for Provably Efficient Infinite-Horizon Reinforcement and Imitation Learning</a></p>
+        <p><strong>Antoine Moulin</strong>, Gergely Neu, Luca Viano<br>(COLT 2025) <em>38th Annual Conference on Learning Theory</em><br>Contributed talk at EWRL 2025<br><a href="https://arxiv.org/abs/2502.13900">arxiv</a></p>
+        <p class="paper-tldr">tl;dr: we provide the first computationally efficient algorithm achieving rate-optimal regret in discounted, linear MDPs; it combines optimistic exploration and artificial transitions to an absorbing state with maximal return. we also apply it to interactive imitation learning, where we get state-of-the-art guarantees.</p>
+      </div>
+      <div class="item">
+        <p class="item-title"><a href="https://arxiv.org/abs/2407.10448">Spectral Representation for Causal Estimation with Hidden Confounders</a></p>
+        <p>Haotian Sun, <strong>Antoine Moulin</strong>, Tongzheng Ren, Arthur Gretton, Bo Dai<br>(AISTATS 2025) <em>28th International Conference on Artificial Intelligence and Statistics</em><br><a href="https://arxiv.org/abs/2407.10448">arxiv</a></p>
+        <p class="paper-tldr">tl;dr: under a low-rank assumption on suitable conditional distributions (analogous to the low-rank MDP assumption made in RL), we propose a primal-dual method that performs well on IV and PCL problems.</p>
+      </div>
 
-                <div onmouseover="document.getElementById('dvd').style.display = 'block';"
-                    onmouseout="document.getElementById('dvd').style.display='none';">
-                    <a href="https://arxiv.org/abs/2505.19946"><papertitle>Inverse Q-Learning Done Right: Offline Imitation Learning in Q<sup>&pi;</sup>-Realizable MDPs</papertitle></a>
-                    <br><b>Antoine Moulin</b>, Gergely Neu, Luca Viano</br>
-                    (NeurIPS 2025) <em>39th Annual Conference on Neural Information Processing Systems</em><br>
-                    <a href="https://arxiv.org/abs/2505.19946">arxiv</a>
-                </div>
-                <div id="dvd" style="display:none">
-                </div><br>
+      <h3 class="year-label">2023</h3>
+      <div class="item">
+        <p class="item-title"><a href="https://arxiv.org/abs/2302.14004.pdf">Optimistic Planning by Regularized Dynamic Programming</a></p>
+        <p><strong>Antoine Moulin</strong>, Gergely Neu<br>(ICML 2023) <em>40th International Conference on Machine Learning</em><br><a href="https://arxiv.org/abs/2302.14004.pdf">arxiv</a></p>
+        <p class="paper-tldr">tl;dr: we analyze optimistic value iteration in discounted MDPs and show that regularization can be used to avoid contraction and monotonicity arguments which typically do not hold under function approximation.</p>
+      </div>
+    </section>
 
-                <div onmouseover="document.getElementById('dvd').style.display = 'block';"
-                    onmouseout="document.getElementById('dvd').style.display='none';">
-                    <a href="https://arxiv.org/abs/2506.10899"><papertitle>Demystifying Spectral Feature Learning for Instrumental Variable Regression</papertitle></a>
-                    <br>Dimitri Meunier, <b>Antoine Moulin</b>, Jakub Wornbard, Vladimir R. Kostic, Arthur Gretton</br>
-                    (NeurIPS 2025) <em>39th Annual Conference on Neural Information Processing Systems</em><br>
-                    <a href="https://arxiv.org/abs/2506.10899">arxiv</a>
-                </div>
-                <div id="dvd" style="display:none">
-                </div><br>
+    <section class="card section-block talks-section">
+      <h2>Talks</h2>
+      <div class="item talk-item">
+        <p class="item-title">Tutorial on Imitation Learning</p>
+        <ul class="talk-events">
+          <li><span class="talk-date">01/2026</span><span class="talk-location"><em>University of Oxford</em>. Oxford, UK.</span></li>
+        </ul>
+      </div>
+      <div class="item talk-item">
+        <p class="item-title">Efficient Exploration in Linear Markov Decision Processes</p>
+        <ul class="talk-events">
+          <li><span class="talk-date">01/2026</span><span class="talk-location"><em>University of Oxford</em>. Oxford, UK.</span></li>
+          <li><span class="talk-date">11/2025</span><span class="talk-location"><em>Isaac Newton Institute</em>. Cambridge, UK.</span></li>
+        </ul>
+      </div>
+      <div class="item talk-item">
+        <p class="item-title">Inverse Q-Learning for Offline Imitation Learning</p>
+        <ul class="talk-events">
+          <li><span class="talk-date">09/2025</span><span class="talk-location"><em>Università degli Studi di Milano</em>. Milan, Italy.</span></li>
+        </ul>
+      </div>
+      <div class="item talk-item">
+        <p class="item-title">Learning in Adversarial Linear MDPs</p>
+        <ul class="talk-events">
+          <li><span class="talk-date">04/2024</span><span class="talk-location"><em>University of Tokyo</em>. Tokyo, Japan.</span></li>
+        </ul>
+      </div>
+      <div class="item talk-item">
+        <p class="item-title">Optimistic Planning by Regularized Dynamic Programming</p>
+        <ul class="talk-events">
+          <li><span class="talk-date">08/2023</span><span class="talk-location"><em>Princeton University</em>. Princeton, NJ.</span></li>
+          <li><span class="talk-date">07/2023</span><span class="talk-location"><em>Stanford University</em>. Stanford, CA.</span></li>
+        </ul>
+      </div>
+      <div class="item talk-item">
+        <p class="item-title">Infinite Horizon MDPs under Function Approximation</p>
+        <ul class="talk-events">
+          <li><span class="talk-date">03/2023</span><span class="talk-location"><em>Universitat Pompeu Fabra</em>. Barcelona, Spain.</span></li>
+        </ul>
+      </div>
+      <div class="item talk-item">
+        <p class="item-title">Primal-Dual Methods for Reinforcement Learning</p>
+        <ul class="talk-events">
+          <li><span class="talk-date">09/2022</span><span class="talk-location"><em>Gatsby Unit, UCL</em>. London, UK.</span></li>
+        </ul>
+      </div>
+      <div class="item talk-item">
+        <p class="item-title">Introduction to JAX</p>
+        <ul class="talk-events">
+          <li><span class="talk-date">09/2021</span><span class="talk-location"><em>ELLIS Doctoral Symposium 2021</em>. T&uuml;bingen, Germany.</span></li>
+        </ul>
+      </div>
+      <div class="item talk-item">
+        <p class="item-title">Virtual Sculpture</p>
+        <ul class="talk-events">
+          <li><span class="talk-date">06/2018</span><span class="talk-location"><em>Journ&eacute;e de l'innovation</em> (finalist). Paris, France.</span></li>
+        </ul>
+      </div>
+    </section>
 
-                <div onmouseover="document.getElementById('dvd').style.display = 'block';"
-                    onmouseout="document.getElementById('dvd').style.display='none';">
-                    <a href="https://arxiv.org/abs/2506.01722"><papertitle>When Lower-Order Terms Dominate: Improved Loss-Range Adaptivity for Experts Algorithms</papertitle></a>
-                    <br><b>Antoine Moulin</b>, Emmanuel Esposito, Dirk van der Hoeven</br>
-                    (NeurIPS 2025) <em>39th Annual Conference on Neural Information Processing Systems</em><br>
-                    <a href="https://arxiv.org/abs/2506.01722">arxiv</a>
-                </div>
-                <div id="dvd" style="display:none">
-                </div><br>
-
-                <div onmouseover="document.getElementById('dvd').style.display = 'block';"
-                    onmouseout="document.getElementById('dvd').style.display='none';">
-                    <a href="https://arxiv.org/abs/2502.13900"><papertitle>Optimistically Optimistic Exploration for Provably Efficient Infinite-Horizon Reinforcement and Imitation Learning</papertitle></a>
-                    <br><b>Antoine Moulin</b>, Gergely Neu, Luca Viano</br>
-                    (COLT 2025) <em>38th Annual Conference on Learning Theory</em><br>
-                    Contributed talk at EWRL 2025<br>
-                    <a href="https://arxiv.org/abs/2502.13900">arxiv</a>
-                </div>
-                <div id="dvd" style="display:none">
-                </div><br>
-
-                <div onmouseover="document.getElementById('dvd').style.display = 'block';"
-                    onmouseout="document.getElementById('dvd').style.display='none';">
-                    <a href="https://arxiv.org/abs/2407.10448"><papertitle>Spectral Representation for Causal Estimation with Hidden Confounders</papertitle></a>
-                    <br>Haotian Sun, <b>Antoine Moulin</b>, Tongzheng Ren, Arthur Gretton, Bo Dai</br>
-                    (AISTATS 2025) <em>28th International Conference on Artifical Intelligence and Statistics</em><br>
-                    <a href="https://arxiv.org/abs/2407.10448">arxiv</a>
-                </div>
-                <div id="dvd" style="display:none">
-                </div><br>
-                
-                <heading2><i>2023</i></heading2><br><br>
-
-                <div onmouseover="document.getElementById('dvd').style.display = 'block';"
-                    onmouseout="document.getElementById('dvd').style.display='none';">
-                    <a href="https://arxiv.org/abs/2302.14004.pdf"><papertitle>Optimistic Planning by Regularized Dynamic Programming</papertitle></a>
-                    <br><b>Antoine Moulin</b>, Gergely Neu</br>
-                    (ICML 2023) <em>40th International Conference on Machine Learning</em><br>
-                    <a href="https://arxiv.org/abs/2302.14004.pdf">arxiv</a>
-                </div>
-                <div id="dvd" style="display:none">
-                </div><br>
-                
-            <!--     <a href="javascript:toggle_vis('publications')">show more</a>
-                <div id="publications" style="display:none"></div> -->
-            </td></tr></tbody>
-        </table>
-
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tbody><tr><td>
-                <heading>Talks</heading> <br><br>
-                <div onmouseover="document.getElementById('dvd').style.display = 'block';"
-                    onmouseout="document.getElementById('dvd').style.display='none';">
-                    <b><papertitle>Learning in Adversarial Linear MDPs</papertitle></b>
-                    <br>04/2024 - <i>University of Tokyo</i>. Tokyo, Japan.
-                </div>
-                <div id="dvd" style="display:none">
-                </div><br>
-
-                <div onmouseover="document.getElementById('dvd').style.display = 'block';"
-                    onmouseout="document.getElementById('dvd').style.display='none';">
-                    <b><papertitle>Optimistic Planning by Regularized Dynamic Programming</papertitle></b>
-                    <br>07/2023 - <i>Stanford University</i>. Stanford, CA.
-                    <br>08/2023 - <i>Princeton University</i>. Princeton, NJ.</br>
-                </div>
-                <div id="dvd" style="display:none">
-                </div><br>
-
-                <div onmouseover="document.getElementById('dvd').style.display = 'block';"
-                    onmouseout="document.getElementById('dvd').style.display='none';">
-                    <b><papertitle>Infinite Horizon MDPs under Function Approximation</papertitle></b>
-                    <br>03/2023 - <i>Universitat Pompeu Fabra</i>. Barcelona, Spain.</br>
-                </div>
-                <div id="dvd" style="display:none">
-                </div><br>
-
-                <div onmouseover="document.getElementById('dvd').style.display = 'block';"
-                    onmouseout="document.getElementById('dvd').style.display='none';">
-                    <b><papertitle>Primal-Dual Methods for Reinforcement Learning</papertitle></b>
-                    <br>09/2022 - <i>Gatsby Unit, UCL</i>. London, UK.</br>
-                </div>
-                <div id="dvd" style="display:none">
-                </div><br>
-
-                <div onmouseover="document.getElementById('dvd').style.display = 'block';"
-                    onmouseout="document.getElementById('dvd').style.display='none';">
-                    <b><papertitle>Introduction to JAX</papertitle></b>
-                    <br>09/2021 - <i>ELLIS Doctoral Symposium 2021</i>. Tübingen, Germany.</br>
-                </div>
-                <div id="dvd" style="display:none">
-                </div><br>
-
-                <div onmouseover="document.getElementById('dvd').style.display = 'block';"
-                    onmouseout="document.getElementById('dvd').style.display='none';">
-                    <b><papertitle>Virtual Sculpture</papertitle></b>
-                    <br>06/2018 - <i>Journée de l'innovation</i> (finalist). Paris, France.</br>
-                </div>
-                <div id="dvd" style="display:none">
-                </div><br>
-                <div id="dvd" style="display:none">
-                </div><br>
-                
-            <!--     <a href="javascript:toggle_vis('publications')">show more</a>
-                <div id="publications" style="display:none"></div> -->
-            </td></tr></tbody>
-        </table>
-
-
-            </tbody></table>
-    
-
-
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:right;font-size:small;">
-                Thanks <a href="https://github.com/jonbarron/website">Jon Barron</a>
-                for this nice template.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-      </td>
-    </tr>
-  </table>
+    <footer class="site-footer">
+      <p>Made with Codex.</p>
+    </footer>
+  </div>
 </body>
-
 </html>
+
+
+
