@@ -1,8 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap");
 
 :root {
+  color-scheme: dark;
   --bg-deep: #060a14;
   --bg-mid: #0b1530;
+  --bg-end: #070f23;
   --panel: rgba(12, 22, 44, 0.74);
   --panel-strong: rgba(15, 28, 54, 0.84);
   --text-main: #e5edff;
@@ -11,6 +13,63 @@
   --accent: #CEB25A;
   --accent-alt: #78a8ff;
   --section-accent: #CEB25A;
+  --star-color: #CEB25A;
+  --name-color: #f5f8ff;
+  --strong-color: #f4f8ff;
+  --note-color: #9bb0dc;
+  --tldr-color: #a9bde6;
+  --footer-color: #8ea8de;
+  --glow-left: rgba(120, 168, 255, 0.16);
+  --glow-right: rgba(206, 178, 90, 0.11);
+  --grid-x: rgba(126, 155, 218, 0.09);
+  --grid-y: rgba(126, 155, 218, 0.08);
+  --grid-opacity: 0.35;
+  --trajectory-opacity: 0.34;
+  --trajectory-mobile-opacity: 0.26;
+  --item-line: rgba(133, 164, 228, 0.2);
+  --card-shadow:
+    0 20px 40px rgba(3, 7, 18, 0.46),
+    inset 0 1px 0 rgba(218, 232, 255, 0.06);
+  --photo-shadow: 0 14px 28px rgba(0, 0, 0, 0.35);
+  --photo-hover-border: rgba(206, 178, 90, 0.42);
+  --link-underline: rgba(206, 178, 90, 0.4);
+  --control-shadow: 0 6px 18px rgba(3, 7, 18, 0.32);
+}
+
+html[data-theme="light"] {
+  color-scheme: light;
+  --bg-deep: #fbf7ed;
+  --bg-mid: #edf4ff;
+  --bg-end: #f8fbff;
+  --panel: rgba(255, 254, 250, 0.84);
+  --panel-strong: rgba(247, 250, 255, 0.94);
+  --text-main: #18243a;
+  --text-soft: #45536c;
+  --line: rgba(45, 79, 126, 0.24);
+  --accent: #295f9e;
+  --accent-alt: #6842b8;
+  --section-accent: #295f9e;
+  --star-color: var(--accent-alt);
+  --name-color: #142138;
+  --strong-color: #142138;
+  --note-color: #566681;
+  --tldr-color: #4b5f7d;
+  --footer-color: #5d6b82;
+  --glow-left: rgba(206, 178, 90, 0.18);
+  --glow-right: rgba(120, 168, 255, 0.2);
+  --grid-x: rgba(41, 95, 158, 0.1);
+  --grid-y: rgba(115, 92, 20, 0.08);
+  --grid-opacity: 0.5;
+  --trajectory-opacity: 0.18;
+  --trajectory-mobile-opacity: 0.15;
+  --item-line: rgba(45, 79, 126, 0.18);
+  --card-shadow:
+    0 18px 36px rgba(38, 60, 96, 0.14),
+    inset 0 1px 0 rgba(255, 255, 255, 0.88);
+  --photo-shadow: 0 12px 24px rgba(37, 53, 84, 0.18);
+  --photo-hover-border: rgba(41, 95, 158, 0.42);
+  --link-underline: rgba(104, 66, 184, 0.45);
+  --control-shadow: 0 6px 18px rgba(37, 53, 84, 0.14);
 }
 
 * {
@@ -29,9 +88,9 @@ body {
   color: var(--text-main);
   line-height: 1.7;
   background:
-    radial-gradient(1200px 700px at 8% 0%, rgba(120, 168, 255, 0.16) 0%, transparent 52%),
-    radial-gradient(900px 620px at 95% 12%, rgba(206, 178, 90, 0.11) 0%, transparent 58%),
-    linear-gradient(145deg, var(--bg-deep) 0%, var(--bg-mid) 52%, #070f23 100%);
+    radial-gradient(1200px 700px at 8% 0%, var(--glow-left) 0%, transparent 52%),
+    radial-gradient(900px 620px at 95% 12%, var(--glow-right) 0%, transparent 58%),
+    linear-gradient(145deg, var(--bg-deep) 0%, var(--bg-mid) 52%, var(--bg-end) 100%);
   position: relative;
   isolation: isolate;
   overflow-x: hidden;
@@ -43,10 +102,10 @@ body::before {
   inset: 0;
   pointer-events: none;
   background-image:
-    linear-gradient(to right, rgba(126, 155, 218, 0.09) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(126, 155, 218, 0.08) 1px, transparent 1px);
+    linear-gradient(to right, var(--grid-x) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-y) 1px, transparent 1px);
   background-size: 48px 48px;
-  opacity: 0.35;
+  opacity: var(--grid-opacity);
   z-index: 0;
 }
 
@@ -62,8 +121,12 @@ body::after {
   background-position: center top, center top;
   background-size: 1300px auto, 1300px auto;
   background-size: max(1300px, 100vw) auto, max(1300px, 100vw) auto;
-  opacity: 0.34;
+  opacity: var(--trajectory-opacity);
   animation: trajectory-drift 28s ease-in-out infinite alternate;
+}
+
+html[data-theme="light"] body::after {
+  filter: brightness(0.68) saturate(0.85);
 }
 
 .page-shell {
@@ -73,14 +136,38 @@ body::after {
   z-index: 2;
 }
 
+.theme-toggle {
+  position: absolute;
+  top: -30px;
+  right: 0;
+  padding: 4px 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--panel-strong);
+  box-shadow: var(--control-shadow);
+  color: var(--accent-alt);
+  cursor: pointer;
+  font-family: "IBM Plex Mono", "Courier New", monospace;
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+
+.theme-toggle:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.theme-toggle:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
 .card {
   background: linear-gradient(180deg, var(--panel) 0%, var(--panel-strong) 100%);
   border: 1px solid var(--line);
   border-radius: 10px;
   padding: clamp(20px, 3vw, 30px);
-  box-shadow:
-    0 20px 40px rgba(3, 7, 18, 0.46),
-    inset 0 1px 0 rgba(218, 232, 255, 0.06);
+  box-shadow: var(--card-shadow);
   backdrop-filter: blur(4px);
   animation: card-rise 0.55s ease both;
 }
@@ -106,7 +193,7 @@ body::after {
   line-height: 1.12;
   font-weight: 700;
   letter-spacing: 0.03em;
-  color: #f5f8ff;
+  color: var(--name-color);
 }
 
 .link-row {
@@ -129,13 +216,13 @@ body::after {
   border-radius: 10px;
   overflow: hidden;
   border: 1px solid var(--line);
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.35);
+  box-shadow: var(--photo-shadow);
   transition: transform 0.24s ease, border-color 0.24s ease;
 }
 
 .hero-photo:hover {
   transform: translateY(-3px);
-  border-color: rgba(206, 178, 90, 0.42);
+  border-color: var(--photo-hover-border);
 }
 
 .hero-photo img {
@@ -156,14 +243,41 @@ h3 {
   margin: 22px 0 10px;
 }
 
-.pub-note {
-  margin: -6px 0 10px;
-  font-size: 0.88rem;
-  color: #9bb0dc;
+.gold-star {
+  color: var(--star-color);
 }
 
-.gold-star {
-  color: var(--section-accent);
+.contribution-note {
+  margin: -6px 0 10px;
+  color: var(--note-color);
+  font-size: 0.7rem;
+  line-height: 1.25;
+}
+
+.equal-contribution {
+  margin-left: 0.15em;
+  font-size: 0.55em;
+  line-height: 0;
+}
+
+.publication-archive {
+  margin-top: 14px;
+}
+
+.publication-archive summary {
+  width: fit-content;
+  color: var(--accent-alt);
+  cursor: pointer;
+  font-family: "IBM Plex Mono", "Courier New", monospace;
+  font-size: 0.9rem;
+}
+
+.publication-archive summary:hover {
+  color: var(--accent);
+}
+
+.publication-archive summary::marker {
+  color: var(--accent);
 }
 
 .year-label {
@@ -176,7 +290,7 @@ h3 {
 
 .item {
   padding: 12px 0;
-  border-top: 1px solid rgba(133, 164, 228, 0.2);
+  border-top: 1px solid var(--item-line);
 }
 
 .item-title {
@@ -196,7 +310,7 @@ h3 {
   padding-left: 2px;
   font-family: "IBM Plex Mono", "Courier New", monospace;
   font-size: 0.84rem;
-  color: #a9bde6;
+  color: var(--tldr-color);
 }
 
 .paper-tldr::before {
@@ -297,12 +411,12 @@ a {
 a:hover,
 a:focus-visible {
   color: var(--accent);
-  border-bottom-color: rgba(206, 178, 90, 0.4);
+  border-bottom-color: var(--link-underline);
   outline: none;
 }
 
 strong {
-  color: #f4f8ff;
+  color: var(--strong-color);
 }
 
 .site-footer {
@@ -313,7 +427,7 @@ strong {
 
 .site-footer p {
   margin: 0;
-  color: #8ea8de;
+  color: var(--footer-color);
   font-size: 0.9rem;
 }
 
@@ -353,14 +467,14 @@ strong {
 
 @media (max-width: 860px) {
   body::after {
-    opacity: 0.26;
+    opacity: var(--trajectory-mobile-opacity);
     background-size: 1080px auto, 1080px auto;
     background-size: max(1080px, 112vw) auto, max(1080px, 112vw) auto;
     animation: none;
   }
 
   .page-shell {
-    margin-top: 24px;
+    margin-top: 38px;
   }
 
   .hero {
